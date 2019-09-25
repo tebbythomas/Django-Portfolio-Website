@@ -4,7 +4,9 @@
 <br />
 The website is hosted on an <b>Ubuntu Server running Apache using a Linode Virtual Private Server</b>
 <br />
+<br />
 <b>The website is hosted here: <a href="https://www.tebbythomas.com">Link</a></b>
+<br />
 <br />
 The <b>home page</b> displays a list of the projects:</p>
 <br />
