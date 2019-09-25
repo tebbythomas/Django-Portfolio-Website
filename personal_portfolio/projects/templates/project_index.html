@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+</style>
+{% extends "base.html" %}
+{% load static %}
+{% block page_content %}
+<h3>
+<a href="https://www.linkedin.com/in/tebby-thomas-274635136" target="_blank" class="fa fa-linkedin"></a>
+<a href="https://github.com/tebbythomas" target="_blank" class="fa fa-github"></a>
+&emsp;<a href="https://www.upwork.com/freelancers/~01ffb805d6d2ec1cd2" target="_blank"><b>Freelance Profile</b> </a></h3>
+<h2><b>&emsp;Hello Hello! I'm Tebby</b><br /></h2>
+<h3>&emsp;Figuring out my path to be a full stack developer and data scientist</h3>
+<br />
+<h3>&emsp;Here are some of the projects I've worked on:<br /></h3>
+<div class="row">
+    {% for project in projects %}
+        <div class="col-md-4">
+            <div class="card mb-2">
+                &emsp;<img class="card-img-top" src="{% static project.image %}" height="275" hspace="20">
+                &emsp;<div class="card-body">
+                    <h5 class="card-title">{{ project.title }}</h5>
+                    <p class="card-text">{{ project.description }}</p>
+                    <a href="{% url 'project_detail' project.pk %}" class="btn btn-primary">
+                     Read More
+                    </a>
+                    <!--<a href="{{ project.url }}" target="_blank" class="btn btn-primary">
+                     Github Repository
+                    </a>-->
+                </div>
+            </div>
+        </div>
+     {% endfor %}
+ </div>
+{% endblock %}

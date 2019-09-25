@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+</style>
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_content %}
+<h3>
+<a href="https://www.linkedin.com/in/tebby-thomas-274635136" target="_blank" class="fa fa-linkedin"></a>
+<a href="https://github.com/tebbythomas" target="_blank" class="fa fa-github"></a>
+&emsp;<a href="https://www.upwork.com/freelancers/~01ffb805d6d2ec1cd2" target="_blank"><b>Freelance Profile</b> </a></h3>
+<h1>&emsp;{{ project.title }}</h1>
+<div class="row">
+    <div class="col-md-8">
+        <img src="{% static project.image %}" alt="" width="100%">
+    </div>
+    <div class="col-md-4">
+        <h5>About the project:</h5>
+        <p>{{ project.description }}</p>
+        <br>
+        <h5>Technologies / Libraries used:</h5>
+        <p>{{ project.technology }}</p>
+        <h5><a href="{{ project.url }}" target="_blank"><b>Github Repo</b></a></h5>
+    </div>
+</div>
+{% endblock %}
