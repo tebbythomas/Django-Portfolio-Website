@@ -21,3 +21,10 @@ The <b>home page</b> displays a list of the projects:</p>
 ![Individual Project Details](https://github.com/tebbythomas/Django-Portfolio-Website/blob/master/Screenshots/Django-Repo-ProjectPage.png)
 -->
 <img src="https://github.com/tebbythomas/Django-Portfolio-Website/blob/master/Screenshots/Django-Repo-ProjectPage.png" hspace="20">
+<br />
+<br />
+<b>Credits:</b>
+<br />
+Corey Schafer:
+<br />
+https://www.youtube.com/playlist?list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p
